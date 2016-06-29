@@ -2,7 +2,7 @@ label {
   display: inline;
 }
 .EditsHeaderDescription {
-  border-top: 1px solid @gray-40;
+  border-top: 1px solid $color-gray-light;
   padding-top: 50px;
 }
 
@@ -16,17 +16,11 @@ label {
   padding-bottom:20px;
 }
 
-.cf-icon-approved{
-  color: green;
-  margin-right:6px;
-}
-
 .edits {
   .table-header {
     color: #101820;
     background: #f7f8f9;
-    border-bottom: 1px solid @gray-40;
-    font-family: 'AvenirNextLTW01-Demi', Arial, sans-serif;
+    border-bottom: 1px solid $color-gray-light;
     font-style: normal;
     font-weight: bold;
     margin-bottom: 1.07142857em;
@@ -51,19 +45,18 @@ label {
     padding: 0.625em;
   }
   table {
-    border: 1px solid @gray-40;
+    border: 1px solid $color-gray-light;
     margin: 0 0 20px;
   }
   .edits-detail {
     padding: 0 20px;
   }
   .summary {
-    border-top: 1px solid @gray-40;
+    border-top: 1px solid $color-gray-light;
   }
 }
 
 .expandable_link {
-  font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   margin-bottom: 0.83333333em;
