@@ -1,6 +1,7 @@
 FROM mhart/alpine-node:latest
 MAINTAINER Andrew Wolfe <awolfe76@gmail.com>
 
+USER root
 RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
