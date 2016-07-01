@@ -1,21 +1,23 @@
-FROM mhart/alpine-node:latest
+FROM node:4
 MAINTAINER Andrew Wolfe <awolfe76@gmail.com>
+#USER root
 
-USER root
 RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 COPY . /usr/src/app
 
-# npm install
+#RUN useradd notroot && chown -R notroot /usr/src/app && chmod u+rwx /usr/src/app
+
 RUN npm cache clean
-#RUN npm install
-#RUN npm rebuild node-sass
+RUN npm install
+RUN npm rebuild node-sass
 
-# npm build
-#RUN npm run clean
-#RUN npm run dev:build
+#USER notroot
 
-EXPOSE 3000
+RUN npm run clean
+RUN npm run dev:build
+
+EXPOSE 80
 
 CMD ["npm", "start"]
