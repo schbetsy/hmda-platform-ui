@@ -1,4 +1,4 @@
-FROM node:4
+FROM node
 MAINTAINER Andrew Wolfe <awolfe76@gmail.com>
 #USER root
 
